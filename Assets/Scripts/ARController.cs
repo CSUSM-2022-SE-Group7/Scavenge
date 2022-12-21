@@ -165,6 +165,8 @@ public class ARController : SampleController
     }
     public void ShowMarker(GameObject marker)
     {
+        if(StateManager.CurrentState() == MainMenuState.MAIN_MENU) return;
+        
         MarkerPrefabScript markerPrefabScript = marker.transform.parent.GetComponent<MarkerPrefabScript>();
         markerPrefabScript.ShowPrefab();
         markerPrefabScript.DeactivateOuterBoxCollider();
