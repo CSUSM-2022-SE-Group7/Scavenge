@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: 6a542b196ced86543afa259e9952b687
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - GazePointer: {instanceID: 0}
+  - DevicePointer: {instanceID: 0}
+  - SwitchInputAction: {instanceID: 0}
+  - AnchorManager: {instanceID: 0}
+  - GizmoTransparent: {fileID: 5732716946704694469, guid: 0531525474b10a34f9f74dca396c0ecc,
+      type: 3}
+  - GizmoSurface: {instanceID: 0}
+  - GizmoTrackedAnchor: {instanceID: 0}
+  - GizmoUntrackedAnchor: {instanceID: 0}
+  - GizmoSavedAddition: {instanceID: 0}
+  - GizmoNotSavedAddition: {instanceID: 0}
+  - CreateButtonUI: {instanceID: 0}
+  - TriggerAction: {instanceID: 0}
+  - SaveNewAnchorsToggle: {instanceID: 0}
+  - NumberOfAnchorsStoredText: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

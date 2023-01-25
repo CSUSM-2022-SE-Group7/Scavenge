@@ -6,37 +6,37 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Samples/Snapdragon Spaces/0.7.0/Core Samples/Scenes/Main Menu/Main
+    path: Assets/Samples/Snapdragon Spaces/0.9.0/Core Samples/Scenes/Main Menu/Main
       Menu.unity
     guid: 2b406ea90420fc841839c843c6bfc3d5
   - enabled: 1
-    path: Assets/Samples/Snapdragon Spaces/0.7.0/Core Samples/Scenes/Anchor Sample/Anchor
+    path: Assets/Samples/Snapdragon Spaces/0.9.0/Core Samples/Scenes/Anchor Sample/Anchor
       Sample.unity
     guid: a6e56af4472621b45b91380052443a24
   - enabled: 1
-    path: Assets/Samples/Snapdragon Spaces/0.7.0/Core Samples/Scenes/Hand Tracking
+    path: Assets/Samples/Snapdragon Spaces/0.9.0/Core Samples/Scenes/Hand Tracking
       Sample/Hand Tracking Sample.unity
     guid: 7f6052019a1504ac09ac3e728b12dd65
   - enabled: 1
-    path: Assets/Samples/Snapdragon Spaces/0.7.0/Core Samples/Scenes/Hit Testing
+    path: Assets/Samples/Snapdragon Spaces/0.9.0/Core Samples/Scenes/Hit Testing
       Sample/Hit Testing Sample.unity
     guid: c583c7f614816bd489b3bcd62bf9aac0
   - enabled: 1
-    path: Assets/Samples/Snapdragon Spaces/0.7.0/Core Samples/Scenes/Image Tracking
+    path: Assets/Samples/Snapdragon Spaces/0.9.0/Core Samples/Scenes/Image Tracking
       Sample/Image Tracking Sample.unity
     guid: 61f68fcb03f5e2640b757852c008c89a
   - enabled: 1
-    path: Assets/Samples/Snapdragon Spaces/0.7.0/Core Samples/Scenes/Plane Detection
+    path: Assets/Samples/Snapdragon Spaces/0.9.0/Core Samples/Scenes/Plane Detection
       Sample/Plane Detection Sample.unity
     guid: 46111d8efce134ef38f645e0c00e1362
   - enabled: 1
-    path: Assets/Samples/Snapdragon Spaces/0.7.0/Core Samples/Scenes/XR Interaction
+    path: Assets/Samples/Snapdragon Spaces/0.9.0/Core Samples/Scenes/XR Interaction
       Toolkit Sample/XR Interaction Toolkit Sample.unity
     guid: 457c784199db14427a9e59e7acbf15a2
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
       type: 2}
-    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: bed7356e30d483e4a90149ac846ca089,
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: c753fffdbb21e4d458d1edec55dfe84c,
       type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: de8a8e4f987434338a4b1062feb8d069,
       type: 2}
@@ -48,5 +48,7 @@ EditorBuildSettings:
       type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 58f40b12bbc864f3c96c6505a9a1e1e3,
       type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 3668a30049700b742b894ea2567d05f9,
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 4f223c71da6abcc49addaf1b55dc34f5,
+      type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: d119f14b041ea2f4d96e3c4f26b200af,
       type: 2}
