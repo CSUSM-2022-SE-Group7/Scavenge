@@ -55,7 +55,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enabled: 1
   nameUi: Hit Testing
-  version: 0.9.0
+  version: 0.11.1
   featureIdInternal: com.qualcomm.snapdragon.spaces.raycasting
   openxrExtensionStrings: XR_QCOM_ray_casting
   company: Qualcomm
@@ -75,12 +75,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   features:
   - {fileID: 1539727131274411876}
+  - {fileID: 905099664723454688}
   - {fileID: 4956383021301793444}
   - {fileID: 6174765218416891958}
   - {fileID: -507270762596144466}
   - {fileID: -6980537125763543308}
   - {fileID: 3861770915303643274}
   - {fileID: -8359079840936653342}
+  - {fileID: 8734595664310073096}
   - {fileID: -423695101868035118}
   - {fileID: -7579448895933286817}
   - {fileID: -4522135797119231312}
@@ -89,7 +91,8 @@ MonoBehaviour:
   - {fileID: 3959697483684245990}
   - {fileID: 6618756657219816965}
   - {fileID: -6717313570860056256}
-  m_renderMode: 1
+  - {fileID: 3573243484865786752}
+  m_renderMode: 0
   m_depthSubmissionMode: 0
 --- !u!114 &-6717313570860056256
 MonoBehaviour:
@@ -105,7 +108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enabled: 1
   nameUi: Spatial Anchors
-  version: 0.9.0
+  version: 0.11.1
   featureIdInternal: com.qualcomm.snapdragon.spaces.spatialanchors
   openxrExtensionStrings: XR_MSFT_spatial_anchor XR_MSFT_spatial_anchor_persistence
   company: Qualcomm
@@ -185,7 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 761fdd4502cb7a84e9ec7a2b24f33f37, type: 3}
   m_Name: MicrosoftMotionControllerProfile Standalone
   m_EditorClassIdentifier: 
-  m_enabled: 1
+  m_enabled: 0
   nameUi: Microsoft Motion Controller Profile
   version: 0.0.1
   featureIdInternal: com.unity.openxr.feature.input.microsoftmotioncontroller
@@ -248,7 +251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enabled: 1
   nameUi: Hand Tracking
-  version: 0.9.0
+  version: 0.11.1
   featureIdInternal: com.qualcomm.snapdragon.spaces.handtracking
   openxrExtensionStrings: XR_EXT_hand_tracking XR_QCOM_hand_tracking_gesture
   company: Qualcomm
@@ -310,6 +313,26 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+--- !u!114 &905099664723454688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22ae41aadce15674187d35d57afdf758, type: 3}
+  m_Name: CameraAccessFeature Android
+  m_EditorClassIdentifier: 
+  m_enabled: 1
+  nameUi: Camera Access (Experimental)
+  version: 0.11.1
+  featureIdInternal: com.qualcomm.snapdragon.spaces.cameraaccess
+  openxrExtensionStrings: XR_QCOMX_camera_frame_access
+  company: Qualcomm
+  priority: 0
+  required: 0
 --- !u!114 &1539727131274411876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -324,7 +347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enabled: 1
   nameUi: Base Runtime
-  version: 0.9.0
+  version: 0.11.1
   featureIdInternal: com.qualcomm.snapdragon.spaces.base
   openxrExtensionStrings: XR_QCOM_component_versioning
   company: Qualcomm
@@ -332,6 +355,7 @@ MonoBehaviour:
   required: 1
   CheckInstalledRuntime: 1
   LaunchAppOnViewer: 1
+  ShowLaunchMessageOnHost: 0
   LaunchControllerOnHost: 1
   UseCustomController: 0
   ExportHeadless: 0
@@ -377,6 +401,26 @@ MonoBehaviour:
   company: Unity
   priority: 0
   required: 0
+--- !u!114 &3573243484865786752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2479fa37ffc4a3c947342fe19e48b14, type: 3}
+  m_Name: SpatialMeshingFeature Android
+  m_EditorClassIdentifier: 
+  m_enabled: 1
+  nameUi: Spatial Meshing (Experimental)
+  version: 0.11.1
+  featureIdInternal: com.qualcomm.snapdragon.spaces.sceneunderstanding
+  openxrExtensionStrings: XR_MSFT_scene_understanding
+  company: Qualcomm
+  priority: 0
+  required: 0
 --- !u!114 &3718256327884959603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,12 +435,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enabled: 1
   nameUi: Plane Detection
-  version: 0.9.0
+  version: 0.11.1
   featureIdInternal: com.qualcomm.snapdragon.spaces.planedetection
-  openxrExtensionStrings: XR_QCOM_plane_detection
+  openxrExtensionStrings: XR_QCOM_plane_detection XR_MSFT_scene_understanding
   company: Qualcomm
   priority: 0
   required: 0
+  UseSceneUnderstandingPlaneDetection: 0
+  ConvexHullEnabled: 1
 --- !u!114 &3861770915303643274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -411,7 +457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enabled: 1
   nameUi: Image Tracking
-  version: 0.9.0
+  version: 0.11.1
   featureIdInternal: com.qualcomm.snapdragon.spaces.imagetracking
   openxrExtensionStrings: XR_QCOM_image_tracking
   company: Qualcomm
@@ -535,12 +581,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enabled: 1
   nameUi: Microsoft Mixed Reality Motion Controller Profile
-  version: 0.9.0
+  version: 0.11.1
   featureIdInternal: com.unity.openxr.feature.input.microsoftmotioncontroller
   openxrExtensionStrings: 
   company: Qualcomm
   priority: 0
   required: 0
+--- !u!114 &8734595664310073096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f647cc0545697264a9878224faada6d5, type: 3}
+  m_Name: MetaQuestFeature Android
+  m_EditorClassIdentifier: 
+  m_enabled: 0
+  nameUi: Meta Quest Support
+  version: 1.0.0
+  featureIdInternal: com.unity.openxr.feature.metaquest
+  openxrExtensionStrings: XR_OCULUS_android_initialize_loader
+  company: Unity
+  priority: 0
+  required: 0
+  targetDevices:
+  - visibleName: Quest
+    manifestName: quest
+    enabled: 1
+  - visibleName: Quest 2
+    manifestName: quest2
+    enabled: 1
+  - visibleName: Quest Pro
+    manifestName: cambria
+    enabled: 1
 --- !u!114 &8812142873070113276
 MonoBehaviour:
   m_ObjectHideFlags: 0
