@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scavenge/Main Menu/Main Menu.unity
+    guid: fc119636a992431fbc4d490cf50b8513
+  - enabled: 1
+    path: Assets/Scavenge/Game/Game.unity
+    guid: a499580a957d482392f5c5b56eec7ad0
+  - enabled: 1
+    path: Assets/Scavenge/Tutorial/Tutorial.unity
+    guid: c8829324ec7d467e816a8421504687e0
+  m_configObjects:
+    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
+      type: 2}
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: c753fffdbb21e4d458d1edec55dfe84c,
+      type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: de8a8e4f987434338a4b1062feb8d069,
+      type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: d29d271d139a72f4095e752aeb8bcdd4,
+      type: 2}
+    com.unity.xr.arcore.PlayerSettings: {fileID: 11400000, guid: c2f7b8d7c0bff4d10874cbcf3f24af78,
+      type: 2}
+    com.unity.xr.arkit.PlayerSettings: {fileID: 11400000, guid: b27ec7d82a91a48e69fd689ad6808e5e,
+      type: 2}
+    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: 1eb95d77acb39444e8cf44313496a874,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 58f40b12bbc864f3c96c6505a9a1e1e3,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 4f223c71da6abcc49addaf1b55dc34f5,
+      type: 2}
